@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Quadris C
+Comment=Quadris C
+Categories=Game;
+Path=/usr/games/quadrisc/
+Exec=/usr/games/quadrisc/QuadrisC
+Terminal=false
+Type=Application

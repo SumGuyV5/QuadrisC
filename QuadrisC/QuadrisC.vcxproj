@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC55F834-76B3-422A-ADFC-87E7111ABB25}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QuadrisC</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>HeaderFiles;$(SDL)\SDL_ttf-2.0.9\include;$(SDL)\SDL-1.2.14\include;$(SDL)\SDL_mixer-1.2.11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SDL)\SDL_ttf-2.0.9\lib;$(SDL)\SDL-1.2.14\lib;$(SDL)\SDL_mixer-1.2.11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl.lib;sdlmain.lib;sdl_mixer.lib;sdl_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>HeaderFiles;$(SDL)\SDL_ttf-2.0.9\include;$(SDL)\SDL-1.2.14\include;$(SDL)\SDL_mixer-1.2.11\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SDL)\SDL_ttf-2.0.9\lib;$(SDL)\SDL-1.2.14\lib;$(SDL)\SDL_mixer-1.2.11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl.lib;sdlmain.lib;sdl_mixer.lib;sdl_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="license.txt" />
+    <None Include="Makefile" />
+    <None Include="readme.txt" />
+    <None Include="Resource\blocks.bmp">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Resource\FreeSansBold.ttf">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Resource\lineremove.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Resource\rotate.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Resource\stop.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\Block.c" />
+    <ClCompile Include="SourceFiles\Game.c" />
+    <ClCompile Include="SourceFiles\Globals.c" />
+    <ClCompile Include="SourceFiles\JoyStick.c" />
+    <ClCompile Include="SourceFiles\main.c" />
+    <ClCompile Include="SourceFiles\Score.c" />
+    <ClCompile Include="SourceFiles\Sound.c" />
+    <ClCompile Include="SourceFiles\TextType.c" />
+    <ClCompile Include="SourceFiles\Timer.c" />
+    <ClCompile Include="SourceFiles\Video.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HeaderFiles\Block.h" />
+    <ClInclude Include="HeaderFiles\eBool.h" />
+    <ClInclude Include="HeaderFiles\eMap.h" />
+    <ClInclude Include="HeaderFiles\eTile.h" />
+    <ClInclude Include="HeaderFiles\Game.h" />
+    <ClInclude Include="HeaderFiles\Globals.h" />
+    <ClInclude Include="HeaderFiles\JoyStick.h" />
+    <ClInclude Include="HeaderFiles\Score.h" />
+    <ClInclude Include="HeaderFiles\Sound.h" />
+    <ClInclude Include="HeaderFiles\sPiece.h" />
+    <ClInclude Include="HeaderFiles\sScoreBoard.h" />
+    <ClInclude Include="HeaderFiles\sVideo.h" />
+    <ClInclude Include="HeaderFiles\TextType.h" />
+    <ClInclude Include="HeaderFiles\Timer.h" />
+    <ClInclude Include="HeaderFiles\Video.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

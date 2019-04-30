@@ -1,0 +1,5 @@
+quadrisc (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Richard Allen <richard2891@gmail.com>  Thu, 09 Jun 2011 00:46:08 -0700

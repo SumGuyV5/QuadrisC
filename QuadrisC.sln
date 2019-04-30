@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuadrisC", "QuadrisC\QuadrisC.vcxproj", "{CC55F834-76B3-422A-ADFC-87E7111ABB25}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuadrisCInstaller", "QuadrisCInstaller\QuadrisCInstaller.vdproj", "{6F73387A-1383-4859-8873-FFF90C8C9002}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuadrisCSource", "QuadrisCSource\QuadrisCSource.vdproj", "{BDDF5F2A-EA55-4709-B1D9-6C236BE12D2E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuadrisCWii", "QuadrisCWii\QuadrisCWii.vcxproj", "{0C21EB17-269F-4098-8F1C-EA2A718D22A7}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC55F834-76B3-422A-ADFC-87E7111ABB25}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC55F834-76B3-422A-ADFC-87E7111ABB25}.Debug|Win32.Build.0 = Debug|Win32
+		{CC55F834-76B3-422A-ADFC-87E7111ABB25}.Release|Win32.ActiveCfg = Release|Win32
+		{CC55F834-76B3-422A-ADFC-87E7111ABB25}.Release|Win32.Build.0 = Release|Win32
+		{6F73387A-1383-4859-8873-FFF90C8C9002}.Debug|Win32.ActiveCfg = Debug
+		{6F73387A-1383-4859-8873-FFF90C8C9002}.Release|Win32.ActiveCfg = Release
+		{BDDF5F2A-EA55-4709-B1D9-6C236BE12D2E}.Debug|Win32.ActiveCfg = Debug
+		{BDDF5F2A-EA55-4709-B1D9-6C236BE12D2E}.Release|Win32.ActiveCfg = Release
+		{0C21EB17-269F-4098-8F1C-EA2A718D22A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C21EB17-269F-4098-8F1C-EA2A718D22A7}.Debug|Win32.Build.0 = Debug|Win32
+		{0C21EB17-269F-4098-8F1C-EA2A718D22A7}.Release|Win32.ActiveCfg = Release|Win32
+		{0C21EB17-269F-4098-8F1C-EA2A718D22A7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

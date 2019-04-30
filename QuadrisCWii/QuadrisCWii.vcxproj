@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C21EB17-269F-4098-8F1C-EA2A718D22A7}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make 2&gt;&amp;1 | sed -e 's/\(\w\+\):\([0-9]\+\):/\1(\2):/'</NMakeBuildCommandLine>
+    <NMakeOutput>QuadrisCWii.dol</NMakeOutput>
+    <NMakeCleanCommandLine>make clean 2&gt;&amp;1 | sed -e 's/\(\w\+\):\([0-9]\+\):/\1(\2):/'</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make rebuild 2&gt;&amp;1 | sed -e 's/\(\w\+\):\([0-9]\+\):/\1(\2):/'</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>../QuadrisC/HeaderFiles;C:\devkitPro\libogc\include\SDL;C:\devkitPro\libogc\include</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>QuadrisCWii.dol</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make rebuild</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>__WII__;WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\QuadrisC\license.txt" />
+    <None Include="..\QuadrisC\readme.txt" />
+    <None Include="..\QuadrisC\Resource\blocks.bmp" />
+    <None Include="..\QuadrisC\Resource\FreeSansBold.ttf" />
+    <None Include="..\QuadrisC\Resource\lineremove.wav" />
+    <None Include="..\QuadrisC\Resource\rotate.wav" />
+    <None Include="..\QuadrisC\Resource\stop.wav" />
+    <None Include="Makefile" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\meta.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Block.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Game.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Globals.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\JoyStick.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\main.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Score.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Sound.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\TextType.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Timer.c" />
+    <ClCompile Include="..\QuadrisC\SourceFiles\Video.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Block.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eBool.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eMap.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eTile.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Game.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Globals.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\JoyStick.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Score.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Sound.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sPiece.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sScoreBoard.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sVideo.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\TextType.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Timer.h" />
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Video.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

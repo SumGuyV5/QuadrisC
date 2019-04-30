@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1.0">
+	<name>Quadris C Wii</name>
+	<version>1.1</version>
+  <release_date>201112150000</release_date>
+	<coder>Richard W. Allen</coder>
+	<short_description>Tetris clone</short_description>
+  <long_description>
+    Tetris clone
+    Turn your wiimote sideways.
+
+    Use the D-pad up to rotate the piece.
+    Use the D-pad down to accelerate the piece.
+    Use the D-pad left and right to move the piece left or right.
+    
+    Use the home button to exit the game.
+  </long_description>
+</app>

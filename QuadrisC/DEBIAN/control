@@ -1,0 +1,13 @@
+Package: quadrisc
+Version: 1.1.0
+Section: games
+Priority: extra
+Architecture: i386
+Depends: libsdl-ttf2.0-0, libsdl-mixer1.2, libsdl1.2debian
+Maintainer: Richard Allen <richard2891@gmail.com>
+Homepage: http://www.richardallenonline.com
+Description: Tetris clone.
+ Tetris clone for Windows and Linux.
+ Installs to /usr/games/quadrisc/
+ The readme and license files can be found there.
+ The a shortcut to Quadris C will be add under Applications/Games. 

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="..\QuadrisC\Resource\blocks.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\QuadrisC\Resource\FreeSansBold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\QuadrisC\Resource\lineremove.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\QuadrisC\Resource\rotate.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\QuadrisC\Resource\stop.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\meta.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\QuadrisC\license.txt" />
+    <None Include="..\QuadrisC\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Block.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Globals.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Score.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Sound.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\TextType.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\Video.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QuadrisC\SourceFiles\JoyStick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eBool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\eTile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Score.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sPiece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sScoreBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\sVideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\TextType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\Video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QuadrisC\HeaderFiles\JoyStick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
